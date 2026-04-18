@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizLog Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at top right, #1e293b, #0f172a);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-color: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+        }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 90%;
+            margin: 60px 0;
+            padding: 60px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--glass-shadow);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to right, #fff, var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .last-update {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            background: var(--accent-color);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #cbd5e1;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: #cbd5e1;
+        }
+
+        li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        strong {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .contact-box {
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(56, 189, 248, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-sub);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 30px 20px; margin: 30px 0; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>BizLog Terms of Service</h1>
+        <div class="last-update">最終更新日：2026年4月18日</div>
+    </header>
+
+    <section>
+        <p>この利用規約（以下「本規約」）は、BizLog（以下「本アプリ」）の提供する一切のサービス（以下「本サービス」）の利用条件を定めるものです。ご利用者（以下「ユーザー」）は、本規約に同意のうえ本サービスを利用するものとします。</p>
+
+        <h2>1. 適用</h2>
+        <p>本規約は、ユーザーと本アプリ開発者 <strong>Teppei Uomi</strong>（以下「当方」）との間の本サービス利用に関わる一切の関係に適用されます。本アプリをダウンロード・インストール・利用した時点で、本規約に同意したものとみなします。</p>
+
+        <h2>2. 利用登録・アカウント</h2>
+        <ul>
+            <li>本サービスの一部機能は、Sign in with Apple によるアカウント作成を必要とします。</li>
+            <li>ユーザーは、自己の責任においてアカウント情報を管理するものとします。</li>
+            <li>アカウントの不正利用により生じた損害について、当方は責任を負いません。</li>
+        </ul>
+
+        <h2>3. 無料トライアルと有料プラン（Pro）</h2>
+        <ul>
+            <li>本アプリは一定期間の無料トライアル後、継続利用のために有料プラン（Pro）への登録が必要となる場合があります。</li>
+            <li>課金・更新・解約はApp Storeのサブスクリプション管理機能を通じて行われます。</li>
+            <li>料金、プラン内容、課金周期はApp Store上の表示に従います。</li>
+            <li>解約は次回更新日の24時間前までに行ってください。それ以降は次回分が課金されます。</li>
+            <li>原則として、課金済み期間の返金は行いません。App Storeの返金ポリシーが優先されます。</li>
+        </ul>
+
+        <h2>4. 禁止事項</h2>
+        <p>ユーザーは、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
+        <ul>
+            <li>法令または公序良俗に違反する行為</li>
+            <li>犯罪行為に関連する行為</li>
+            <li>当方、他のユーザー、第三者の権利を侵害する行為</li>
+            <li>本サービスの運営を妨害する行為</li>
+            <li>リバースエンジニアリング、逆コンパイル、不正アクセス等の行為</li>
+            <li>本アプリを複製・改変・再配布する行為</li>
+            <li>その他、当方が不適切と判断する行為</li>
+        </ul>
+
+        <h2>5. 知的財産権</h2>
+        <p>本アプリおよび本サービスに関する著作権、商標権その他の知的財産権は、当方または正当な権利者に帰属します。ユーザーは、本規約で明示的に許諾された範囲を超えて、これらを利用してはなりません。</p>
+
+        <h2>6. データの取り扱い</h2>
+        <ul>
+            <li>ユーザーが本アプリに入力したログ、タスク、時給単価などのデータは、端末内およびユーザー自身のクラウドアカウント（Supabase）に保存されます。</li>
+            <li>個人情報の取り扱いは、別途「プライバシーポリシー」に定めます。</li>
+            <li>ユーザーは、自身のデータについて、いつでもアプリ内からエクスポート／削除を行うことができます。</li>
+        </ul>
+
+        <h2>7. 広告の表示</h2>
+        <p>本サービスでは、無料プラン利用時に第三者配信事業者（Google AdMob等）による広告を表示することがあります。広告のパーソナライズに関する詳細は、プライバシーポリシーをご確認ください。</p>
+
+        <h2>8. サービス内容の変更・停止</h2>
+        <p>当方は、ユーザーに事前に通知することなく、本サービスの内容を変更、追加、停止、終了することができます。これによりユーザーに生じた損害について、当方は責任を負いません。</p>
+
+        <h2>9. 免責事項</h2>
+        <ul>
+            <li>当方は、本サービスに事実上または法律上の瑕疵がないことを明示的にも黙示的にも保証しません。</li>
+            <li>本サービスの利用により生じたユーザーの損害について、当方の故意または重過失による場合を除き、当方は責任を負いません。</li>
+            <li>本アプリはユーザーの時間管理・業務記録を補助するツールであり、記録内容の正確性、業務上の意思決定の結果について当方は保証しません。</li>
+        </ul>
+
+        <h2>10. 利用規約の変更</h2>
+        <p>当方は、必要と判断した場合、ユーザーに通知することなく本規約を変更できます。変更後の規約は本アプリまたは当方のウェブサイトに掲示した時点から効力を生じます。</p>
+
+        <h2>11. 準拠法・裁判管轄</h2>
+        <p>本規約の解釈にあたっては、日本法を準拠法とします。本サービスに関して紛争が生じた場合、当方の所在地を管轄する裁判所を専属的合意管轄とします。</p>
+
+        <h2>12. お問い合わせ</h2>
+        <div class="contact-box">
+            <p><strong>Operator:</strong> Teppei Uomi (Neo Vision)</p>
+            <p><strong>Email:</strong> support@bizlog.app</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Teppei Uomi. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>

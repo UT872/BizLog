@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Biz AI Coach | Official Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at top right, #1e293b, #0f172a);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent-color: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-sub: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* App Icon Placeholder */
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #38bdf8 0%, #1d4ed8 100%);
+            border-radius: 22px;
+            margin: 0 auto 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, #fff, var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            color: var(--text-sub);
+            font-size: 1rem;
+            margin-bottom: 48px;
+            letter-spacing: 0.05em;
+        }
+
+        /* Nav Links */
+        .nav-grid {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 60px;
+        }
+
+        .nav-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            text-decoration: none;
+            color: var(--text-main);
+            transition: var(--transition);
+            text-align: left;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-4px);
+            background: rgba(56, 189, 248, 0.1);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .nav-card .info h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .nav-card .info p {
+            margin: 4px 0 0;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+
+        .nav-card .arrow {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        /* Support Button */
+        .btn-support {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-color);
+            color: #0f172a;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            margin-top: 20px;
+        }
+
+        .btn-support:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        footer {
+            margin-top: 80px;
+            color: var(--text-sub);
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .nav-card { padding: 16px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="app-logo">X</div>
+    <h1>X-Biz AI Coach</h1>
+    <p class="tagline">Maximize your productivity with AI.</p>
+
+    <nav class="nav-grid">
+        <a href="https://ut872.github.io/X-Biz1/privacypolicy" class="nav-card">
+            <div class="info">
+                <h3>Privacy Policy</h3>
+                <p>プライバシーポリシー</p>
+            </div>
+            <span class="arrow">▹</span>
+        </a>
+
+        <a href="https://ut872.github.io/X-Biz1/terms-of-service" class="nav-card">
+            <div class="info">
+                <h3>Terms of Service</h3>
+                <p>利用規約</p>
+            </div>
+            <span class="arrow">▹</span>
+        </a>
+
+        <a href="https://ut872.github.io/X-Biz1/asct/" class="nav-card">
+            <div class="info">
+                <h3>Commercial Transactions Act</h3>
+                <p>特定商取引法に基づく表記</p>
+            </div>
+            <span class="arrow">▹</span>
+        </a>
+    </nav>
+
+    <a href="https://forms.gle/jRpUudBFAcsR8tNB6" class="btn-support" target="_blank">
+        Contact & Feedback
+    </a>
+
+    <footer>
+        &copy; 2026 Teppei Uomi. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
